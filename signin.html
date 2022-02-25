@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<title>justsaid</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue-grey.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="css/search.css">
+<link rel="stylesheet" href="css/comment.css">
+<link rel="stylesheet" type="text/css" href="css/util.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+
+
+
+<style>
+html, body, h1, h2, h3, h4, h5 {font-family: "Open Sans", sans-serif}
+</style>
+<body class="w3-theme-l5">
+
+<!-- Navbar -->
+<div class="w3-top">
+    <div class="w3-bar w3-theme-d2 w3-left-align w3-large">
+    
+    <div href="#" class="navbar-pic w3-bar-item ">
+    
+    <img src="image/just.png" alt="IMG" >
+    
+    </div>
+    
+     <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="News"><i class="fa fa-globe"></i></a>
+     <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Account Settings"><i class="fa fa-user"></i></a>
+     
+     
+     <div class="w3-dropdown-hover w3-hide-small">
+       <button class="w3-button w3-padding-large" title="Notifications"><i class="fa fa-bell"></i><span class="w3-badge w3-right w3-small w3-theme-orange-red">3</span></button>     
+     </div>
+     
+     <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="login"><i class="fa fa-sign-in"></i></a>
+      <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="logout"><i class="fa fa-sign-out"></i></a>
+     
+     
+     <div class="search-container">
+       <form action="/action_page.php">
+       <input type="text" placeholder="Search.." name="search">
+       <button type="submit"><i class="fa fa-search w3-text-black"></i></button>
+       </form>
+     </div>
+     
+    </div>
+   </div>
+
+
+<!-- Page Container -->
+<div class="w3-container w3-content" style="max-width:1400px;margin-top:80px">    
+  <!-- The Grid -->
+  <div class="w3-row">
+    <!-- Left Column -->
+    <div class="w3-col m2">
+      <!-- Profile -->
+        <div class="w3-card w3-round w3-orange w3-center">
+            <div class="w3-container">
+              <p>Upcoming Events:</p>
+              <img src="/w3images/forest.jpg" alt="Forest" style="width:100%;">
+              <p><strong>Holiday</strong></p>
+              <p>Friday 15:00</p>
+              <p><button class="w3-button w3-block w3-theme-l4">Info</button></p>
+            </div>
+          </div>
+          <br>
+          
+          <div class="w3-card w3-round w3-orange w3-center">
+            <div class="w3-container">
+              <p>Friend Request</p>
+              <img src="/w3images/avatar6.png" alt="Avatar" style="width:50%"><br>
+              <span>Jane Doe</span>
+              <div class="w3-row w3-opacity">
+                <div class="w3-half">
+                  <button class="w3-button w3-block w3-green w3-section" title="Accept"><i class="fa fa-check"></i></button>
+                </div>
+                <div class="w3-half">
+                  <button class="w3-button w3-block w3-red w3-section" title="Decline"><i class="fa fa-remove"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <br>
+          
+          <div class="w3-card w3-round w3-orange w3-padding-16 w3-center">
+            <p>ADS</p>
+          </div>
+          <br>
+          
+          <div class="w3-card w3-round w3-orange w3-padding-32 w3-center">
+            <p><i class="fa fa-bug w3-xxlarge"></i></p>
+          </div>
+          
+      <br>
+      
+    </div>
+
+
+    
+    <!-- Middle Column -->
+    <div class="w3-col m8">
+        
+                <div class="container-login100">
+                    <div class="wrap-login100">
+                        
+                        <div class="login100-pic" data-tilt>
+                            <img src="image/F6F625AA-4933-4F72-A728-648D4F52D567.png" alt="IMG">
+                        </div>
+        
+                        <form class="login100-form validate-form">
+                            <span class="login100-form-title">
+                                Account
+                            </span>
+        
+                            <div class="wrap-input100 " data-validate = "Valid email is required: ex@abc.xyz">
+                                <input class="input100" type="text" name="email" placeholder="Username">
+                                <span class="focus-input100"></span>
+                                <span class="symbol-input100">
+                                    <i class="fa fa-user" aria-hidden="true"></i>
+                                </span>
+                            </div>
+        
+                            <div class="wrap-input100 " data-validate = "Password is required">
+                                <input class="input100" type="password" name="pass" placeholder="Password">
+                                <span class="focus-input100"></span>
+                                <span class="symbol-input100">
+                                    <i class="fa fa-lock" aria-hidden="true"></i>
+                                </span>
+                            </div>
+                            
+                            <div class="container-login100-form-btn ">
+                                <button class="login100-form-btn w3-margin-bottom">
+                                    Login
+                                </button>
+                            </div>
+        
+                            <div class="text-center w3-margin-top">
+                                <span >
+                                    Forgot
+                                </span>
+                                <a class="w3-button w3-text-red" href="#">
+                                    Username / Password?
+                                </a>
+                            </div>
+        
+                            <div class="text-center w3-margin-top">
+                                <a class="w3-button w3-text-red"  href="#">
+                                    Create your Account
+                                    <i class="fa fa-long-arrow-right m-l-5" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+    
+      </div>
+
+    <div class="w3-col m2">
+        <!-- Profile -->
+          <div class="w3-card w3-round w3-orange w3-center">
+              <div class="w3-container">
+                <p>Upcoming Events:</p>
+                <img src="/w3images/forest.jpg" alt="Forest" style="width:100%;">
+                <p><strong>Holiday</strong></p>
+                <p>Friday 15:00</p>
+                <p><button class="w3-button w3-block w3-theme-l4">Info</button></p>
+              </div>
+            </div>
+            <br>
+            
+            <div class="w3-card w3-round w3-orange w3-center">
+              <div class="w3-container">
+                <p>Friend Request</p>
+                <img src="/w3images/avatar6.png" alt="Avatar" style="width:50%"><br>
+                <span>Jane Doe</span>
+                <div class="w3-row w3-opacity">
+                  <div class="w3-half">
+                    <button class="w3-button w3-block w3-green w3-section" title="Accept"><i class="fa fa-check"></i></button>
+                  </div>
+                  <div class="w3-half">
+                    <button class="w3-button w3-block w3-red w3-section" title="Decline"><i class="fa fa-remove"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <br>
+            
+            <div class="w3-card w3-round w3-orange w3-padding-16 w3-center">
+              <p>ADS</p>
+            </div>
+            <br>
+            
+            <div class="w3-card w3-round w3-orange w3-padding-32 w3-center">
+              <p><i class="fa fa-bug w3-xxlarge"></i></p>
+            </div>
+            
+        <br>
+        
+      </div>
+      
+  </div>
+  
+<!-- End Page Container -->
+</div>
+
+
+
+</body>
+</html> 
