@@ -14,16 +14,12 @@
     padding: 6px 10px;
     margin-top: 8px;
     margin-right: 16px;
-    background: #fff;
     font-size: 17px;
     border: none;
     cursor: pointer;
   }
 
   
-   .search-container button:hover {
-    background: #fff;
-  }
 
   .w3-theme-d2 {color:rgb(0, 0, 0) !important; background-color:#FFB9A8 !important}
   
@@ -32,7 +28,9 @@
 }
 
 
-.w3-button:hover{color:#000!important;background-color:#FFE8D5!important}
+.w3-buttonBlack:hover{color:#000000 ;background-color:none !important}
+
+.w3-buttonOrange:hover{color:#FC4B32 !important;background-color:none !important}
 
 .w3-theme-orange {color:#FC4B32 !important;}
 

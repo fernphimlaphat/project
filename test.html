@@ -43,170 +43,228 @@ html, body, h1, h2, h3, h4, h5 {font-family: "Open Sans", sans-serif}
 <body class="w3-theme-l5">
 <!-- Navbar -->
 <div class="w3-top">
-    <div class="w3-bar w3-theme-d2 w3-left-align w3-large">
-    
-    <div href="#" class="navbar-pic w3-bar-item ">
-    
-    <img src="image/just.png" alt="IMG" >
-    
-    </div>
-    
-     <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="login"><i class="fa fa-sign-in"></i></a>
-     
-     <div class="search-container">
-       <form action="/action_page.php">
+  <div class="w3-bar w3-theme-d2 w3-left-align w3-large">
+   
+   <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-large w3-theme-d2 w3-hover-none" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+   <div href="#" class="navbar-pic w3-bar-item "><img src="image/just.png" alt="IMG" > </div>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-none" title="News"><i class="fa fa-globe"></i></a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-none" title="Account Settings"><i class="fa fa-user"></i></a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-none" title="News"><i class="fa fa-bell"></i><span class="w3-badge w3-right w3-small w3-theme-orange-red">3</span></a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-none" title="login"><i class="fa fa-sign-in"></i></a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-none" title="logout"><i class="fa fa-sign-out"></i></a>
+    <div class="search-container w3-hide-small">
+     <form action="/action_page.php">
        <input type="text" placeholder="Search.." name="search">
-       <button type="submit"><i class="fa fa-search w3-text-black"></i></button>
-       </form>
-     </div>
-     
-    </div>
+       <button type="submit"><i class="fa fa-search w3-text-black "></i></button>
+     </form>
+   </div>
   </div>
+
+
+   <!-- Navbar on small screens -->
+ <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium w3-large w3-right ">
+
+  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-center w3-hover-none"><i class="fa fa-globe"></i></a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-center w3-hover-none "><i class="fa fa-user"></i></a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-center w3-hover-none "><i class="fa fa-bell"></i></a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-center w3-hover-none "><i class="fa fa-sign-in"></i></a>
+  <div class="w3-bar-item w3-button w3-padding-large w3-center w3-hover-none">
+    <form action="/action_page.php">
+      <input type="text" placeholder="Search.." name="search">
+      <button  type="submit"><i class="fa fa-search w3-text-black "></i></button>
+    </form>
+  </div>
+</div>
+</div>
+ 
+
 
  <!-- content -->
  <div class="w3-container w3-content" style="max-width:1400px;margin-top:80px">    
-    <!-- The Grid -->
-    <div class="w3-row">
-      <!-- Left Column -->
-      <div class="w3-col m2">
-        <!-- Profile -->
-          <div class="w3-card w3-round w3-orange w3-center">
-              <div class="w3-container">
-                <p>Upcoming Events:</p>
-                <img src="/w3images/forest.jpg" alt="Forest" style="width:100%;">
-                <p><strong>Holiday</strong></p>
-                <p>Friday 15:00</p>
-                <p><button class="w3-button w3-block w3-theme-l4">Info</button></p>
-              </div>
-            </div>
-            <br>
-            
-            <div class="w3-card w3-round w3-orange w3-center">
-              <div class="w3-container">
-                <p>Friend Request</p>
-                <img src="/w3images/avatar6.png" alt="Avatar" style="width:50%"><br>
-                <span>Jane Doe</span>
-                <div class="w3-row w3-opacity">
-                  <div class="w3-half">
-                    <button class="w3-button w3-block w3-green w3-section" title="Accept"><i class="fa fa-check"></i></button>
-                  </div>
-                  <div class="w3-half">
-                    <button class="w3-button w3-block w3-red w3-section" title="Decline"><i class="fa fa-remove"></i></button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <br>
-            
-            <div class="w3-card w3-round w3-orange w3-padding-16 w3-center">
-              <p>ADS</p>
-            </div>
-            <br>
-            
-            <div class="w3-card w3-round w3-orange w3-padding-32 w3-center">
-              <p><i class="fa fa-bug w3-xxlarge"></i></p>
-            </div>
-        <br>
+  <!-- The Grid -->
+  <div class="w3-row">
+    <!-- Left Column -->
+    <div class="w3-col m3">
+      <!-- Profile -->
+      <div class="w3-card w3-round w3-orange">
+        <div class="w3-container">
+         <h4 class="w3-center">My Profile</h4>
+         <p class="w3-center"><img src="https://s.isanook.com/ca/0/ui/279/1396205/download20190701165129_1562561119.jpg" class="w3-circle" style="height:106px;width:106px" alt="Avatar"></p>
+         <hr>
+         <p href="#"><button><a href="#" class="w3-bar-item w3-button w3-hover-none"><i class="fa fa-user"></i></a></button>Name</p>
+         <p href="#"><button><a href="#" class="w3-bar-item w3-button w3-hover-none"><i class="fa fa-toggle-right"></i></a></button>suggest</p>
+        </div>
       </div>
-  
-      <!-- Middle Column -->
-      <div class="w3-col m8">
-          
-                  <div class="container-login100">
-                      <div class="wrap-login100">
-                          
-                        <div class="login100-pic" data-tilt>
-                          <img src="image/F6F625AA-4933-4F72-A728-648D4F52D567.png" alt="IMG">
-                      </div>
-          
-                          <form class="login100-form validate-form">
-                              <span class="login100-form-title">
-                                Register
-                              </span>
-          
-                              <div class="wrap-input100 " data-validate = "Valid email is required: ex@abc.xyz">
-                                  <input class="input100" type="text" name="email" placeholder="Email">
-                                  <span class="focus-input100"></span>
-                                  <span class="symbol-input100">
-                                      <i class="fa fa-envelope" aria-hidden="true"></i>
-                                  </span>
-                              </div>
-  
-                              <div class="wrap-input100 " data-validate = "Valid email is required: ex@abc.xyz">
-                                <input class="input100" type="text" name="user" placeholder="Username">
-                                <span class="focus-input100"></span>
-                                <span class="symbol-input100">
-                                    <i class="fa fa-user" aria-hidden="true"></i>
-                                </span>
-                            </div>
-          
-                              <div class="wrap-input100 " data-validate = "Password is required">
-                                  <input class="input100" type="password" name="pass" placeholder="Password">
-                                  <span class="focus-input100"></span>
-                                  <span class="symbol-input100">
-                                      <i class="fa fa-lock" aria-hidden="true"></i>
-                                  </span>
-                              </div>
-                              
-                              <div class="container-login100-form-btn ">
-                                  <button class="login100-form-btn w3-margin-bottom">
-                                    Register Now
-                                  </button>
-                              </div>
-                          </form>
-                      </div>
-                  </div>
-      
-        </div>
-  
-      <div class="w3-col m2">
-          <!-- Profile -->
-            <div class="w3-card w3-round w3-orange w3-center">
-                <div class="w3-container">
-                  <p>Upcoming Events:</p>
-                  <img src="/w3images/forest.jpg" alt="Forest" style="width:100%;">
-                  <p><strong>Holiday</strong></p>
-                  <p>Friday 15:00</p>
-                  <p><button class="w3-button w3-block w3-theme-l4">Info</button></p>
-                </div>
-              </div>
-              <br>
-              
-              <div class="w3-card w3-round w3-orange w3-center">
-                <div class="w3-container">
-                  <p>Friend Request</p>
-                  <img src="/w3images/avatar6.png" alt="Avatar" style="width:50%"><br>
-                  <span>Jane Doe</span>
-                  <div class="w3-row w3-opacity">
-                    <div class="w3-half">
-                      <button class="w3-button w3-block w3-green w3-section" title="Accept"><i class="fa fa-check"></i></button>
-                    </div>
-                    <div class="w3-half">
-                      <button class="w3-button w3-block w3-red w3-section" title="Decline"><i class="fa fa-remove"></i></button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <br>
-              
-              <div class="w3-card w3-round w3-orange w3-padding-16 w3-center">
-                <p>ADS</p>
-              </div>
-              <br>
-              
-              <div class="w3-card w3-round w3-orange w3-padding-32 w3-center">
-                <p><i class="fa fa-bug w3-xxlarge"></i></p>
-              </div>
-              
-          <br>
-          
-        </div>
-        
     </div>
     
-  <!-- End Page Container -->
-</div>
+    <!-- Middle Column -->
+    <div class="w3-col m7">
+      <div class="w3-container w3-card w3-orange w3-round w3-margin"><br>
+        <img src="/w3images/avatar2.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:60px">
+        <span class="w3-right w3-opacity">1 min<button><a href="#" class="w3-button w3-hover-none"><i class="fa fa-share fa-2x"></i></a></button></span>
+        <h4>John Doe</h4><br>
+        <hr class="w3-clear">
+        <h4 class="w3-text-orange">Topic</h4><br>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          <div class="w3-row-padding" style="margin:0 -16px">
+            <div class="w3-half">
+              <img src="https://s.isanook.com/ca/0/ui/279/1396205/download20190701121212_1562562851.jpg" style="width:100%" alt="Northern Lights" class="w3-margin-bottom">
+            </div>
+            <div class="w3-half">
+              <img src="https://s.isanook.com/ca/0/ui/279/1396205/s__152616983_1562561120.jpg" style="width:100%" alt="Nature" class="w3-margin-bottom">
+          </div>
+        </div>
+
+        <p class="w3-text-orange" >tag tag</p>
+
+        <button type="button" class="w3-buttonOrange w3-theme-orange w3-margin-bottom"><i class="fa fa-thumbs-up fa-2x"> </i><span class="w3-badge w3-right w3-small w3-theme-orange-red">10</span></button> 
+        <button type="button" class="w3-buttonBlack w3-margin-bottom"><i class="fa fa-comment fa-2x"></i> <span class="w3-badge w3-right w3-small w3-theme-orange-red">5</span></button> 
+      </div>
+
+    <div class="bootstrap snippets">
+      
+    <div class="w3-container w3-card w3-orange w3-round w3-margin">
+      <div class="panel-body">
+        <textarea class="form-control" rows="2" placeholder="What are you thinking?"></textarea>
+        <div class="mar-top clearfix">
+          <button class="btn btn-orange pull-right" type="submit"><i class="fa fa-pencil fa-fw"></i> Comment</button>
+          <p class="btn w3-buttonBlack w3-margin-bottom"><button><i class="fa fa-video-camera add-tooltip"></i></button></p>
+          <p class="btn w3-buttonBlack w3-margin-bottom"><button><i class="fa fa-camera add-tooltip"></i></button></p>
+          <p class="btn w3-buttonBlack w3-margin-bottom"><button><i class="fa fa-file add-tooltip"></i></button></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-container w3-card w3-orange w3-round w3-margin">
+        <div class="panel-body w3-orange">
+            <!-- Newsfeed Content -->
+            <!--===================================================-->
+            <div class="media-block">
+              <a class="media-left" href="#"><img class="img-circle img-sm" alt="Profile Picture" src="https://bootdey.com/img/Content/avatar/avatar1.png"></a>
+              <div class="media-body">
+                <div class="mar-btm">
+                  <a href="#" class="btn-link text-semibold media-heading box-inline">Lisa D.</a>
+                  <p class="text-muted text-sm"><i class="fa fa-mobile fa-lg"></i> - From Mobile - 11 min ago</p>
+                </div>
+                <p>consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+                
+                <hr class="new4">
+              </div>
+            </div>
+            <!--===================================================-->
+            <!-- End Newsfeed Content -->
+        
+        
+            <!-- Newsfeed Content -->
+            <!--===================================================-->
+            <div class="media-block pad-all">
+              <a class="media-left" href="#"><img class="img-circle img-sm" alt="Profile Picture" src="https://bootdey.com/img/Content/avatar/avatar1.png"></a>
+              <div class="media-body">
+                <div class="mar-btm">
+                  <a href="#" class="btn-link text-semibold media-heading box-inline">John Doe</a>
+                  <p class="text-muted text-sm"><i class="fa fa-mobile fa-lg"></i> - From Mobile - 11 min ago</p>
+                </div>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <img class="img-responsive thumbnail" src="https://via.placeholder.com/400x300" alt="Image">
+                <hr>
+              </div>
+            </div>
+        
+            <div>
+              <div class="media-block pad-all">
+                <a class="media-left" href="#"><img class="img-circle img-sm" alt="Profile Picture" src="https://bootdey.com/img/Content/avatar/avatar2.png"></a>
+                <div class="media-body">
+                  <div class="mar-btm">
+                    <a href="#" class="btn-link text-semibold media-heading box-inline">Maria Leanz</a>
+                    <p class="text-muted text-sm"><i class="fa fa-globe fa-lg"></i> - From Web - 2 min ago</p>
+                  </div>
+                  <p>Duis autem vel eum iriure dolor in hendrerit in vulputate ?</p>
+                  
+                </div>
+              </div>
+            </div>
+            <!--===================================================-->
+            <!-- End Newsfeed Content -->
+          </div>
+
+    </div>
+    </div>
+      
+    <!-- End Middle Column -->
+    </div>
+    
+    <!-- Right Column -->
+    <div class="w3-col m2">
+      <div class="w3-card w3-round w3-orange w3-center">
+        <div class="w3-container">
+          <p>Upcoming Events:</p>
+          <img src="/w3images/forest.jpg" alt="Forest" style="width:100%;">
+          <p><strong>Holiday</strong></p>
+          <p>Friday 15:00</p>
+          <p><button class="w3-button w3-block w3-theme-l4">Info</button></p>
+        </div>
+      </div>
+      <br>
+      
+      <div class="w3-card w3-round w3-orange w3-center">
+        <div class="w3-container">
+          <p>Friend Request</p>
+          <img src="/w3images/avatar6.png" alt="Avatar" style="width:50%"><br>
+          <span>Jane Doe</span>
+          <div class="w3-row w3-opacity">
+            <div class="w3-half">
+              <button class="w3-button w3-block w3-green w3-section" title="Accept"><i class="fa fa-check"></i></button>
+            </div>
+            <div class="w3-half">
+              <button class="w3-button w3-block w3-red w3-section" title="Decline"><i class="fa fa-remove"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      
+      <div class="w3-card w3-round w3-orange w3-padding-16 w3-center">
+        <p>ADS</p>
+      </div>
+      <br>
+      
+      <div class="w3-card w3-round w3-orange w3-padding-32 w3-center">
+        <p><i class="fa fa-bug w3-xxlarge"></i></p>
+      </div>
+      
+    <!-- End Right Column -->
+    </div>
+    
+  <!-- End Grid -->
+  </div>
   
- 
+<!-- End Page Container -->
+</div>
+
+
 </body>
+<script>
+  // Accordion
+  function myFunction(id) {
+    var x = document.getElementById(id);
+    if (x.className.indexOf("w3-show") == -1) {
+      x.className += " w3-show";
+      x.previousElementSibling.className += " w3-theme-d1";
+    } else { 
+      x.className = x.className.replace("w3-show", "");
+      x.previousElementSibling.className = 
+      x.previousElementSibling.className.replace(" w3-theme-d1", "");
+    }
+  }
+  
+  // Used to toggle the menu on smaller screens when clicking on the menu button
+  function openNav() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+      x.className += " w3-show";
+    } else { 
+      x.className = x.className.replace(" w3-show", "");
+    }
+  }
+</script>
 </html> 
